@@ -8,6 +8,7 @@ RUN apt-get update
 
 RUN apt-get install -y vim openssh-server
 RUN mkdir /var/run/sshd
+RUN mkdir /deploy
 
 # Install Java
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
