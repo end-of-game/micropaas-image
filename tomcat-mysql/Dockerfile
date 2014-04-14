@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install -y vim openssh-server
 
 # Install Java
-RUN apt-get install openjdk-7-jdk 
+RUN apt-get -y install openjdk-7-jdk 
 
 # Install Mysql
 RUN echo mysql-server-5.5 mysql-server/root_password password 'root' | debconf-set-selections
