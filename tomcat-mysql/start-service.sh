@@ -2,7 +2,7 @@
 
 export TOMCAT_HOME=/opt/tomcat
 
-echo "root:root" | chpasswd
+echo 'root:root' | chpasswd
 
 /usr/sbin/sshd
 /usr/sbin/mysqld &
